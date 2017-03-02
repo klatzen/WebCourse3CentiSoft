@@ -1,5 +1,4 @@
-﻿using CentiSoftCore.Models;
-using CentiSoftCore.MODELS;
+﻿using CentiSoftCore.MODELS;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -17,7 +16,7 @@ namespace CentiSoftCore.DAL
 
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Client> Clients { get; set; }
-        public DbSet<Task> Tasks { get; set; }
+        public DbSet<MODELS.Task> Tasks { get; set; }
         public DbSet<Developer> Developers { get; set; }
         public DbSet<Project> Projects { get; set; }
 

@@ -1,4 +1,4 @@
-﻿using CentiSoftCore.Models;
+﻿using CentiSoftCore.MODELS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
