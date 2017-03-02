@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CentiSoftCore.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,12 @@ namespace CentiSoftMVCWebCourse3.Controllers
     {
         public ActionResult Index()
         {
+            CentiSoftCore.DAL.CentiSoftDBContext context = new CentiSoftCore.DAL.CentiSoftDBContext();
+            Client firstClient = new Client();
+            firstClient.Name = "First Client";
+            firstClient.Token = "abcd1234";
+            context.Clients.Add(firstClient);
+            context.SaveChanges();
             return View();
         }
 
