@@ -1,4 +1,5 @@
 *.config
+*.suo
 /CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/obj/Debug/CentiSoftMVCWebCourse3.pdb
 /CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/obj/Debug/CentiSoftMVCWebCourse3.dll
 /CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/obj/Debug/CentiSoftMVCWebCourse3.csprojResolveAssemblyReference.cache
