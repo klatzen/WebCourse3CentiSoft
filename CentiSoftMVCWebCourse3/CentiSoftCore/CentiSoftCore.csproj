@@ -54,6 +54,7 @@
     <Compile Include="MODELS\Customer.cs" />
     <Compile Include="MODELS\Developer.cs" />
     <Compile Include="MODELS\Project.cs" />
+    <Compile Include="MODELS\Task.cs" />
     <Compile Include="Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
