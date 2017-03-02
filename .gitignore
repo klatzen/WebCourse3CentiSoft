@@ -1,4 +1,3 @@
-*.config
 *.suo
 /CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/obj/Debug/CentiSoftMVCWebCourse3.pdb
 /CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/obj/Debug/CentiSoftMVCWebCourse3.dll
@@ -43,3 +42,5 @@
 /CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/CentiSoftMVCWebCourse3.pdb
 /CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/CentiSoftMVCWebCourse3.dll
 /CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Antlr3.Runtime.pdb
+/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/CentiSoftMVCWebCourse3.dll.config
+/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/VBCSCompiler.exe.config
