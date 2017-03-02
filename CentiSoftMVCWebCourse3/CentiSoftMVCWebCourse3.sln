@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentiSoftMVCWebCourse3", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentiSoftMVCWebCourse3.Tests", "CentiSoftMVCWebCourse3.Tests\CentiSoftMVCWebCourse3.Tests.csproj", "{53F0CDF5-6327-40DE-9048-90005B961B22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentiSoftCore", "CentiSoftCore\CentiSoftCore.csproj", "{BE4AFBA7-F148-4210-84E0-D54CBDCD2D7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{53F0CDF5-6327-40DE-9048-90005B961B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53F0CDF5-6327-40DE-9048-90005B961B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53F0CDF5-6327-40DE-9048-90005B961B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE4AFBA7-F148-4210-84E0-D54CBDCD2D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4AFBA7-F148-4210-84E0-D54CBDCD2D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4AFBA7-F148-4210-84E0-D54CBDCD2D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4AFBA7-F148-4210-84E0-D54CBDCD2D7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
