@@ -1,21 +1,24 @@
-﻿using System;
+﻿using CentiSoftCore.MODELS;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CentiSoftCore.Model
+namespace CentiSoftCore.MODELS
 {
-    class Task
+    public class Task
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public string description { get; set; }
-        public DateTime created { get; set; }
-        public float duration { get; set; }
-        public int projectId { get; set; }
-        public Project project { get; set; }
-        public int developerId { get; set; }
-        public Developer developer { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public DateTime Created { get; set; }
+        public float Duration { get; set; }
+        public int ProjectId { get; set; }
+        public Project Project { get; set; }
+        public int DeveloperId { get; set; }
+        public Developer Developer { get; set; }
     }
 }
