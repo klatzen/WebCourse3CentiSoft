@@ -13,6 +13,6 @@ namespace CentiSoftCore.MODELS
         public int Id { get; set; }
         public string Name { get; set; }
         public string Token { get; set; }
-        public List<Customer> Cutomers { get; set; }
+        public List<Customer> Customers { get; set; }
     }
 }

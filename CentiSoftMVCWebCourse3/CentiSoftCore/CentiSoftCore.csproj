@@ -49,7 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BaseFacade.cs" />
+    <Compile Include="BLL\ClientFacade.cs" />
+    <Compile Include="BLL\CustomerFacade.cs" />
+    <Compile Include="BLL\DeveloperFacade.cs" />
+    <Compile Include="DAL\BaseRepository.cs" />
     <Compile Include="DAL\CentiSoftDBContext.cs" />
+    <Compile Include="DAL\ClientRepository.cs" />
+    <Compile Include="DAL\CustomerRepository.cs" />
+    <Compile Include="DAL\DeveloperRepository.cs" />
+    <Compile Include="DAL\ProjectRepository.cs" />
+    <Compile Include="DAL\TaskRepository.cs" />
     <Compile Include="MODELS\Client.cs" />
     <Compile Include="MODELS\Customer.cs" />
     <Compile Include="MODELS\Developer.cs" />
@@ -62,9 +72,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BLL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
