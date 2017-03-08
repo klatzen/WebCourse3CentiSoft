@@ -53,5 +53,10 @@ namespace CentiSoftCore.DAL
         {
             return dbContext.Tasks.Where(x => x.DeveloperId == id).ToList();
         }
+
+        public List<MODELS.Task> TasksOnProj(int id, int clientId)
+        {
+            return dbContext.Tasks.Where(x => x.ProjectId == id && x.Project.Customer.ClientId == clientId).ToList();
+        }
     }
 }
