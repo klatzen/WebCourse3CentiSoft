@@ -35,7 +35,7 @@ namespace CentiSoftCore.BLL
             if(developer != null)
             {
                 bool hasTasks = taskRep.DevHasTasks(developer.Id);
-                if (!hasTasks)
+                if (hasTasks)
                 {
                     devRep.DeleteDev(id);
                 }

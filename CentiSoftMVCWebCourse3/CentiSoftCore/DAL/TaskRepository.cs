@@ -37,5 +37,16 @@ namespace CentiSoftCore.DAL
             dbContext.Tasks.Remove(tempTask);
             dbContext.SaveChanges();
         }
+
+        public bool DevHasTasks(int id)
+        {
+            bool hasTasks = false;
+            List<MODELS.Task> tasksOnDev = dbContext.Tasks.Where(x => x.DeveloperId == id).ToList();
+            if(tasksOnDev != null)
+            {
+                hasTasks = true;
+            }
+            return hasTasks;
+        }
     }
 }
