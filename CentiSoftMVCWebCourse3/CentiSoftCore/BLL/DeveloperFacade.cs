@@ -41,5 +41,17 @@ namespace CentiSoftCore.BLL
                 }
             }
         }
+
+        public List<MODELS.Task> LoadTasksOnDev(int id)
+        {
+            Developer developer = devRep.LoadDev(id);
+            List<MODELS.Task> tasksOnDev = null;
+            if (developer != null)
+            {
+
+                tasksOnDev = taskRep.TasksOnDev(developer.Id);
+            }
+            return tasksOnDev;
+        }
     }
 }

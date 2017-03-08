@@ -41,12 +41,17 @@ namespace CentiSoftCore.DAL
         public bool DevHasTasks(int id)
         {
             bool hasTasks = false;
-            List<MODELS.Task> tasksOnDev = dbContext.Tasks.Where(x => x.DeveloperId == id).ToList();
+            List<MODELS.Task> tasksOnDev = TasksOnDev(id);
             if(tasksOnDev != null)
             {
                 hasTasks = true;
             }
             return hasTasks;
+        }
+
+        public List<MODELS.Task> TasksOnDev(int id)
+        {
+            return dbContext.Tasks.Where(x => x.DeveloperId == id).ToList();
         }
     }
 }
