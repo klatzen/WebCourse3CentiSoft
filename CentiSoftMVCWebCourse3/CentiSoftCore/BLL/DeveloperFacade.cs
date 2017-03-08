@@ -19,6 +19,11 @@ namespace CentiSoftCore.BLL
             taskRep = new TaskRepository();
         }
 
+        public List<Developer> LoadAllDev()
+        {
+            return devRep.LoadAllDev();
+        }
+
         public Developer LoadDev(int id)
         {
            return devRep.LoadDev(id);
