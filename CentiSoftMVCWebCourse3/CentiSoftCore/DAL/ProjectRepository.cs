@@ -9,20 +9,20 @@ namespace CentiSoftCore.DAL
 {
     public class ProjectRepository : BaseRepository
     {
-        public Project LoadProject(int id)
+        public Project LoadProject(int id, int clientId)
         {
-            return dbContext.Projects.FirstOrDefault(x => x.Id == id);
+            return dbContext.Projects.Include(x=> x.Cusomter).FirstOrDefault(x => x.Id == id && x.Customer.ClientId == clientId);
         }
 
-        public List<Project> LoadAllProject()
+        public List<Project> LoadAllProject(int clientId)
         {
-            return dbContext.Projects.ToList();
+            return dbContext.Projects.Where(x => x.Customer.ClientId == clientId).ToList();
         }
         public void SaveProject(Project project)
         {
             if (project.Id > 0)
             {
-                Project tempProject = LoadProject(project.Id);
+                Project tempProject = LoadProject(project.Id, project.Customer.ClientId);
                 tempProject.Name = project.Name;
                 tempProject.DueDate = project.DueDate;
             }
@@ -32,9 +32,9 @@ namespace CentiSoftCore.DAL
             }
             dbContext.SaveChanges();
         }
-        public void DeleteProject(int id)
+        public void DeleteProject(int id, int clientId)
         {
-            Project project = LoadProject(id);
+            Project project = LoadProject(id, clientId);
             dbContext.Projects.Remove(project);
             dbContext.SaveChanges();
         }
