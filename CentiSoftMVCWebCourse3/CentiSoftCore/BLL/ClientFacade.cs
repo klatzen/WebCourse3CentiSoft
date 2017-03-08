@@ -12,11 +12,12 @@ namespace CentiSoftCore.BLL
     {
         private ClientRepository clientRepo;
         private CustomerRepository customerRepo;
+        private ProjectRepository projectRepo;
         public ClientFacade(int clientId) : base(clientId)
         {
             clientRepo = new ClientRepository();
             customerRepo = new CustomerRepository();
-            
+            projectRepo = new ProjectRepository();            
         }
         public Client LoadClient(int id)
         {
@@ -40,9 +41,15 @@ namespace CentiSoftCore.BLL
                 {
                     clientRepo.DeleteClient(id);
                 }
-            }
-            
-            
+            }           
+        }
+        public List<Customer> FindCustomersOnClient(int id)
+        {
+            return customerRepo.FindCustomersOnClient(id);
+        }
+        public List<Project> FindProjectsOnClient(int id)
+        {
+            return projectRepo.FindProjectOnClient(id);
         }
     }
 }
