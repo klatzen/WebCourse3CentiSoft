@@ -12,6 +12,7 @@ namespace CentiSoftCore.BLL
     {
         private CustomerRepository customerRepository;
         private ProjectRepository projectRepository;
+        private TaskRepository taskRepository;
         public CustomerFacade(int clientId) : base(clientId)
         {
 
@@ -20,22 +21,22 @@ namespace CentiSoftCore.BLL
 
         }
 
-        public Customer loadCustomer(int id)
+        public Customer LoadCustomer(int id)
         {
             return customerRepository.loadCustomer(id, clientId);
         }
 
-        public List<Customer> loadAllCustomers()
+        public List<Customer> LoadAllCustomers()
         {
             return customerRepository.LoadAllCustomers(clientId);
         }
 
-        public void saveCustomer(Customer customer)
+        public void SaveCustomer(Customer customer)
         {
             customerRepository.saveCustomer(customer);
         }
 
-        public void deleteCustomer(int id) {
+        public void DeleteCustomer(int id) {
 
             Customer cus = customerRepository.loadCustomer(id, clientId);
             if (!projectRepository.hasProjects(id)) {
@@ -43,8 +44,13 @@ namespace CentiSoftCore.BLL
             }
         }
 
-        public List<Project> findProjectsOnCusID(int cusId) {
+        public List<Project> FindProjectsOnCusID(int cusId) {
             return projectRepository.findProjOnCusID(cusId, clientId);
+        }
+
+        public List<MODELS.Task> FindTasksOnProject(int id)
+        {
+            return taskRepository.TasksOnProj(id,clientId);
         }
     }
 }
