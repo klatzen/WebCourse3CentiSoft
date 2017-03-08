@@ -9,9 +9,9 @@ namespace CentiSoftCore.DAL
 {
     public class ProjectRepository : BaseRepository
     {
-        public Project LoadProject(int id, int clientId)
+        public Project LoadProject(int id)
         {
-            return dbContext.Projects.Include(x => x.Customer).FirstOrDefault(x => x.Id == id && x.Customer.ClientId == clientId);
+            return dbContext.Projects.FirstOrDefault(x => x.Id == id);
         }
 
         public List<Project> LoadAllProject()
@@ -22,7 +22,7 @@ namespace CentiSoftCore.DAL
         {
             if (project.Id > 0)
             {
-                Project tempProject = LoadProject(project.Id, project.Customer.ClientId);
+                Project tempProject = LoadProject(project.Id);
                 tempProject.Name = project.Name;
                 tempProject.DueDate = project.DueDate;
             }
@@ -32,16 +32,27 @@ namespace CentiSoftCore.DAL
             }
             dbContext.SaveChanges();
         }
-        public void DeleteProject(int id, int clientId)
+        public void DeleteProject(int id)
         {
-            Project project = LoadProject(id, clientId);
+            Project project = LoadProject(id);
             dbContext.Projects.Remove(project);
             dbContext.SaveChanges();
         }
 
-        public List<Project> FindProjectOnClient(int id)
+        public bool hasProjects(int id)
         {
-            return dbContext.Projects.Include(x => x.Customer).Where(x=> x.Customer.ClientId == id).ToList();
+            bool hasProjects = false;
+            List<Project> proj = dbContext.Projects.Where(x => x.CustomerId == id).ToList();
+            if (proj != null) {
+                hasProjects = true;
+            }
+            return hasProjects;
+        }
+
+        public List<Project> findProjOnCusID(int cusId)
+        {
+            List<Project> projList = dbContext.Projects.Where(x => x.CustomerId == cusId).ToList();
+            return projList;
         }
     }
 }
