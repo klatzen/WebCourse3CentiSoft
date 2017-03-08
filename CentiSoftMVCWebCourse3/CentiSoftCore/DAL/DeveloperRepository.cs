@@ -7,12 +7,41 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.DAL
 {
-    class DeveloperRepository : BaseRepository
+    public class DeveloperRepository : BaseRepository
     {
-
-        public DeveloperRepository()
+        
+        public Developer LoadDev(int id)
         {
-            
+            return dbContext.Developers.FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<Developer> LoadAllDev()
+        {
+            return dbContext.Developers.ToList();
+        }
+
+        public void SaveDev(Developer dev)
+        {
+            if (dev.Id > 0)
+            {
+                Developer tempDev = LoadDev(dev.Id);
+                tempDev.Email = dev.Email;
+                tempDev.Name = dev.Name;
+            }
+            else
+            {
+                dbContext.Developers.Add(dev);
+            }
+            dbContext.SaveChanges();
+        }
+
+        public void DeleteDev(int id)
+        {
+            Developer dev = LoadDev(id);
+            if(dev != null)
+            {
+                dbContext.Developers.Remove(dev);
+            }
         }
     }
 }
