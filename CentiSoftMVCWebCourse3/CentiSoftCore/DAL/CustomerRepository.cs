@@ -10,13 +10,13 @@ namespace CentiSoftCore.DAL
    public class CustomerRepository : BaseRepository
     {
 
-        public Customer loadCustomer(int id) {
-            Customer cust = dbContext.Customers.FirstOrDefault(x => x.Id == id);
+        public Customer loadCustomer(int id, int clientId) {
+            Customer cust = dbContext.Customers.Where(x => x.ClientId == clientId).FirstOrDefault(x => x.Id == id);
             return cust;
         }
 
-        public List<Customer> LoadAllCustomers() {
-            List<Customer> custList = dbContext.Customers.ToList();
+        public List<Customer> LoadAllCustomers(int clientId) {
+            List<Customer> custList = dbContext.Customers.Where(x => x.ClientId == clientId).ToList();
             return custList;
         }
 
@@ -40,8 +40,8 @@ namespace CentiSoftCore.DAL
             return dbContext.Customers.FirstOrDefault(x => x.ClientId == id);
         }
 
-        public void removeCustomer(Customer customer) {
-
+        public void removeCustomer(int id) {
+            Customer customer = loadCustomer(id);
             dbContext.Customers.Remove(customer);
         }
     }

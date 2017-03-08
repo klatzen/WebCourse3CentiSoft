@@ -22,12 +22,12 @@ namespace CentiSoftCore.BLL
 
         public Customer loadCustomer(int id)
         {
-            return customerRepository.loadCustomer(id);
+            return customerRepository.loadCustomer(id, clientId);
         }
 
         public List<Customer> loadAllCustomers()
         {
-            return customerRepository.LoadAllCustomers();
+            return customerRepository.LoadAllCustomers(clientId);
         }
 
         public void saveCustomer(Customer customer)
@@ -37,9 +37,9 @@ namespace CentiSoftCore.BLL
 
         public void deleteCustomer(int id) {
 
-            Customer cus = customerRepository.loadCustomer(id);
+            Customer cus = customerRepository.loadCustomer(id, clientId);
             if (!projectRepository.hasProjects(id)) {
-                customerRepository.removeCustomer(cus);
+                customerRepository.removeCustomer(id);
             }
         }
 
