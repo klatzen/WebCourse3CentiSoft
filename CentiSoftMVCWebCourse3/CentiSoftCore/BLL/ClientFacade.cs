@@ -47,9 +47,9 @@ namespace CentiSoftCore.BLL
         {
             return customerRepo.FindCustomersOnClient(id);
         }
-        public List<Project> FindProjectsOnClient(int id)
+        public List<Project> FindProjectsOnClient()
         {
-            return projectRepo.FindProjectOnClient(id);
+            return projectRepo.FindProjectOnClient(clientId);
         }
     }
 }

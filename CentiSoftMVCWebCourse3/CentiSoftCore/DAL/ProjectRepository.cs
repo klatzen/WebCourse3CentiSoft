@@ -49,10 +49,15 @@ namespace CentiSoftCore.DAL
             return hasProjects;
         }
 
-        public List<Project> findProjOnCusID(int cusId)
+        public List<Project> findProjOnCusID(int cusId, int clientId)
         {
-            List<Project> projList = dbContext.Projects.Where(x => x.CustomerId == cusId).ToList();
+            List<Project> projList = dbContext.Projects.Where(x => x.CustomerId == cusId && x.Customer.ClientId == clientId).ToList();
             return projList;
+        }
+
+        public List<Project> FindProjectOnClient(int clientId)
+        {
+            return dbContext.Projects.Include(x => x.Cusomter).Where(x => x.Customer.ClientId == clientId);
         }
     }
 }

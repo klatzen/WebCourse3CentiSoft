@@ -44,7 +44,7 @@ namespace CentiSoftCore.BLL
         }
 
         public List<Project> findProjectsOnCusID(int cusId) {
-            return projectRepository.findProjOnCusID(cusId);
+            return projectRepository.findProjOnCusID(cusId, clientId);
         }
     }
 }
