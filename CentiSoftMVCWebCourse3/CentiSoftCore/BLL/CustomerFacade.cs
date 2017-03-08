@@ -38,7 +38,13 @@ namespace CentiSoftCore.BLL
         public void deleteCustomer(int id) {
 
             Customer cus = customerRepository.loadCustomer(id);
-            bool customerHasProj = projectRepository.hasTasks(id);
+            if (!projectRepository.hasProjects(id)) {
+                customerRepository.removeCustomer(cus);
+            }
+        }
+
+        public List<Project> findProjectsOnCusID(int cusId) {
+            return projectRepository.findProjOnCusID(cusId);
         }
     }
 }

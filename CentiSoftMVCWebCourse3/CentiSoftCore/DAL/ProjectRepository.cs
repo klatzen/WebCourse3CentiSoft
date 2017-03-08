@@ -38,5 +38,21 @@ namespace CentiSoftCore.DAL
             dbContext.Projects.Remove(project);
             dbContext.SaveChanges();
         }
+
+        public bool hasProjects(int id)
+        {
+            bool hasProjects = false;
+            List<Project> proj = dbContext.Projects.Where(x => x.CustomerId == id).ToList();
+            if (proj != null) {
+                hasProjects = true;
+            }
+            return hasProjects;
+        }
+
+        public List<Project> findProjOnCusID(int cusId)
+        {
+            List<Project> projList = dbContext.Projects.Where(x => x.CustomerId == cusId).ToList();
+            return projList;
+        }
     }
 }
