@@ -44,5 +44,10 @@ namespace CentiSoftCore.DAL
             Customer customer = loadCustomer(id);
             dbContext.Customers.Remove(customer);
         }
+
+        public List<Customer> FindCustomersOnClient(int id)
+        {
+            return dbContext.Customers.Where(x => x.ClientId == id).ToList();
+        }
     }
 }
