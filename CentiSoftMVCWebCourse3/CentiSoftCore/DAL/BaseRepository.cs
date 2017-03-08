@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.DAL
 {
-    class BaseRepository
+    public class BaseRepository
     {
         protected CentiSoftDBContext dbContext;
 
