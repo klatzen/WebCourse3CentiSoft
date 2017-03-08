@@ -38,10 +38,9 @@ namespace CentiSoftCore.DAL
         public void DeleteDev(int id)
         {
             Developer dev = LoadDev(id);
-            if(dev != null)
-            {
-                dbContext.Developers.Remove(dev);
-            }
+            dbContext.Developers.Remove(dev);
+            dbContext.SaveChanges();
         }
+    }
     }
 }
