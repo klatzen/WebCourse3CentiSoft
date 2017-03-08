@@ -1,123 +1,195 @@
+# Download this file using PowerShell v3 under Windows with the following comand:
+# Invoke-WebRequest https://gist.githubusercontent.com/kmorcinek/2710267/raw/ -OutFile .gitignore
+# or wget:
+# wget --no-check-certificate http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+
+# User-specific files
 *.suo
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/obj/Debug/CentiSoftMVCWebCourse3.pdb
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/obj/Debug/CentiSoftMVCWebCourse3.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/obj/Debug/CentiSoftMVCWebCourse3.csprojResolveAssemblyReference.cache
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/obj/Debug/CentiSoftMVCWebCourse3.csproj.FileListAbsolute.txt
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/System.Web.WebPages.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/System.Web.WebPages.Razor.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/System.Web.WebPages.Deployment.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/System.Web.Razor.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/System.Web.Optimization.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/System.Web.Mvc.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/System.Web.Http.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/System.Web.Http.WebHost.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/System.Web.Helpers.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/System.Net.Http.Formatting.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/VBCSCompiler.exe
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/vbc.exe
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/System.Reflection.Metadata.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/System.Collections.Immutable.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/Microsoft.VisualBasic.Core.targets
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/Microsoft.CSharp.Core.targets
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/Microsoft.CodeAnalysis.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/csc.exe
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Newtonsoft.Json.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.Owin.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.Owin.Security.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.Owin.Security.Twitter.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.Owin.Security.OAuth.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.Owin.Security.MicrosoftAccount.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.Owin.Security.Google.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.Owin.Security.Facebook.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.Owin.Security.Cookies.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.Owin.Host.SystemWeb.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.AspNet.Identity.Owin.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.AspNet.Identity.EntityFramework.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Microsoft.AspNet.Identity.Core.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/EntityFramework.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/EntityFramework.SqlServer.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/CentiSoftMVCWebCourse3.pdb
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/CentiSoftMVCWebCourse3.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/Antlr3.Runtime.pdb
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/CentiSoftMVCWebCourse3.dll.config
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/roslyn/VBCSCompiler.exe.config
-/CentiSoftMVCWebCourse3/CentiSoftCore/bin/Debug/EntityFramework.xml
-/CentiSoftMVCWebCourse3/CentiSoftCore/bin/Debug/EntityFramework.SqlServer.xml
-/CentiSoftMVCWebCourse3/CentiSoftCore/bin/Debug/EntityFramework.SqlServer.dll
-/CentiSoftMVCWebCourse3/CentiSoftCore/bin/Debug/EntityFramework.dll
-/CentiSoftMVCWebCourse3/CentiSoftCore/bin/Debug/CentiSoftCore.pdb
-/CentiSoftMVCWebCourse3/CentiSoftCore/bin/Debug/CentiSoftCore.dll.config
-/CentiSoftMVCWebCourse3/CentiSoftCore/bin/Debug/CentiSoftCore.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.AspNet.Identity.Owin.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.AspNet.Identity.Owin.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.AspNet.Identity.EntityFramework.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.AspNet.Identity.EntityFramework.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.AspNet.Identity.Core.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.AspNet.Identity.Core.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/EntityFramework.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/EntityFramework.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/CentiSoftMVCWebCourse3.Tests.pdb
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/CentiSoftMVCWebCourse3.Tests.dll.config
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/CentiSoftMVCWebCourse3.Tests.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/CentiSoftMVCWebCourse3.pdb
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/CentiSoftMVCWebCourse3.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/CentiSoftCore.pdb
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/CentiSoftCore.dll
-/CentiSoftMVCWebCourse3/CentiSoftCore/obj/Debug/CentiSoftCore.pdb
-/CentiSoftMVCWebCourse3/CentiSoftCore/obj/Debug/CentiSoftCore.dll
-/CentiSoftMVCWebCourse3/CentiSoftCore/obj/Debug/CentiSoftCore.csproj.FileListAbsolute.txt
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/System.Reflection.Metadata.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/System.Collections.Immutable.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/Microsoft.VisualBasic.Core.targets
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/Microsoft.CSharp.Core.targets
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/Microsoft.CodeAnalysis.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/Microsoft.CodeAnalysis.CSharp.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/csc.exe
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Owin.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Newtonsoft.Json.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Newtonsoft.Json.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.Web.Infrastructure.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.Owin.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.Owin.Security.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.Owin.Security.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.Owin.Security.Cookies.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.Owin.Security.Cookies.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.Owin.Host.SystemWeb.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.Owin.Host.SystemWeb.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/Microsoft.Owin.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/obj/Debug/CentiSoftMVCWebCourse3.Tests.pdb
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/obj/Debug/CentiSoftMVCWebCourse3.Tests.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/obj/Debug/CentiSoftMVCWebCourse3.Tests.csprojResolveAssemblyReference.cache
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/obj/Debug/CentiSoftMVCWebCourse3.Tests.csproj.FileListAbsolute.txt
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.WebPages.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.WebPages.Razor.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.WebPages.Razor.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.WebPages.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.WebPages.Deployment.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.WebPages.Deployment.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Razor.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Razor.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Optimization.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Optimization.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Mvc.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Mvc.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Http.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Http.WebHost.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Http.WebHost.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Http.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Helpers.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Web.Helpers.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Net.Http.Formatting.xml
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/System.Net.Http.Formatting.dll
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/VBCSCompiler.exe.config
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/VBCSCompiler.exe
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3.Tests/bin/Debug/roslyn/vbc.exe
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/CentiSoftCore.pdb
-/CentiSoftMVCWebCourse3/CentiSoftMVCWebCourse3/bin/CentiSoftCore.dll
+*.user
+*.sln.docstates
+
+# Build results
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.log
+*.scc
+
+# OS generated files #
+.DS_Store*
+Icon?
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# Guidance Automation Toolkit
+*.gpState
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+# Installshield output folder
+[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.Publish.xml
+
+# Windows Azure Build Output
+csx
+*.build.csdef
+
+# Windows Store app package directory
+AppPackages/
+
+# Others
+*.Cache
+ClientBin/
+[Ss]tyle[Cc]op.*
+~$*
+*~
+*.dbmdl
+*.[Pp]ublish.xml
+*.pfx
+*.publishsettings
+modulesbin/
+tempbin/
+
+# EPiServer Site file (VPP)
+AppData/
+
+# RIA/Silverlight projects
+Generated_Code/
+
+# Backup & report files from converting an old project file to a newer
+# Visual Studio version. Backup files are not needed, because we have git ;-)
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+
+# vim
+*.txt~
+*.swp
+*.swo
+ 
+# svn
+.svn
+
+# Remainings from resolvings conflicts in Source Control
+*.orig
+
+# SQL Server files
+**/App_Data/*.mdf
+**/App_Data/*.ldf
+**/App_Data/*.sdf
+
+
+#LightSwitch generated files
+GeneratedArtifacts/
+_Pvt_Extensions/
+ModelManifest.xml
+
+# =========================
+# Windows detritus
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac desktop service store files
+.DS_Store
+
+# SASS Compiler cache
+.sass-cache
+
+# Visual Studio 2014 CTP
+**/*.sln.ide
+
+# Visual Studio temp something
+.vs/
+
+**/node_modules/*
+
+#####
+# End of core ignore list, below put you custom 'per project' settings (patterns or path)
+#####
