@@ -6,7 +6,36 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.DAL
 {
-    class TaskRepository
+    public class TaskRepository : BaseRepository
     {
+        public List<MODELS.Task> LoadAllTask()
+        {
+            return dbContext.Tasks.ToList();
+        }
+        public MODELS.Task LoadTask(int id)
+        {
+            return dbContext.Tasks.FirstOrDefault(x => x.Id == id);
+        }
+        public void SaveTask(MODELS.Task task)
+        {
+            if(task.Id > 0)
+            {
+                MODELS.Task tempTask = LoadTask(task.Id);
+                tempTask.Name = task.Name;
+                tempTask.Description = task.Description;
+                tempTask.Duration = task.Duration;
+            }
+            else
+            {
+                dbContext.Tasks.Add(task);
+            }
+            dbContext.SaveChanges();
+        }
+        public void DeleteTask(int id)
+        {
+            MODELS.Task tempTask = LoadTask(id);
+            dbContext.Tasks.Remove(tempTask);
+            dbContext.SaveChanges();
+        }
     }
 }
