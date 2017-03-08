@@ -35,6 +35,11 @@ namespace CentiSoftCore.DAL
             dbContext.SaveChanges();
         }
 
+        public Customer CustomersOnClient(int id)
+        {
+            return dbContext.Customers.FirstOrDefault(x => x.ClientId == id);
+        }
+
         public void removeCustomer(Customer customer) {
 
             dbContext.Customers.Remove(customer);

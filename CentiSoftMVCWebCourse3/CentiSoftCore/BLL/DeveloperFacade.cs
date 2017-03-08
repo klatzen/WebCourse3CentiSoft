@@ -19,6 +19,11 @@ namespace CentiSoftCore.BLL
             taskRep = new TaskRepository();
         }
 
+        public List<Developer> LoadAllDev()
+        {
+            return devRep.LoadAllDev();
+        }
+
         public Developer LoadDev(int id)
         {
            return devRep.LoadDev(id);
@@ -35,11 +40,23 @@ namespace CentiSoftCore.BLL
             if(developer != null)
             {
                 bool hasTasks = taskRep.DevHasTasks(developer.Id);
-                if (!hasTasks)
+                if (hasTasks)
                 {
                     devRep.DeleteDev(id);
                 }
             }
+        }
+
+        public List<MODELS.Task> LoadTasksOnDev(int id)
+        {
+            Developer developer = devRep.LoadDev(id);
+            List<MODELS.Task> tasksOnDev = null;
+            if (developer != null)
+            {
+
+                tasksOnDev = taskRep.TasksOnDev(developer.Id);
+            }
+            return tasksOnDev;
         }
     }
 }
