@@ -53,6 +53,9 @@
     <Compile Include="BLL\ClientFacade.cs" />
     <Compile Include="BLL\CustomerFacade.cs" />
     <Compile Include="BLL\DeveloperFacade.cs" />
+    <Compile Include="BLL\IClientFacade.cs" />
+    <Compile Include="BLL\ICustomerFacade.cs" />
+    <Compile Include="BLL\IDeveloperFacade.cs" />
     <Compile Include="DAL\BaseRepository.cs" />
     <Compile Include="DAL\CentiSoftDBContext.cs" />
     <Compile Include="DAL\ClientRepository.cs" />

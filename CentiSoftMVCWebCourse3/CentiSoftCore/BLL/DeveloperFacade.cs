@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.BLL
 {
-    public class DeveloperFacade : BaseFacade
+    public class DeveloperFacade : BaseFacade, IDeveloperFacade
     {
         private DeveloperRepository devRep;
         private TaskRepository taskRep;

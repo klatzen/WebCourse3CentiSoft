@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.BLL
 {
-    public class ClientFacade : BaseFacade
+    public class ClientFacade : BaseFacade, IClientFacade
     {
         private ClientRepository clientRepo;
         private CustomerRepository customerRepo;
