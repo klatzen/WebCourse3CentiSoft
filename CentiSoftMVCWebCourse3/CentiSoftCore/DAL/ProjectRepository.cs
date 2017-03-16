@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data.Entity;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +12,7 @@ namespace CentiSoftCore.DAL
     {
         public Project LoadProject(int id, int clientId)
         {
-            return dbContext.Projects.Include(x=> x.Cusomter).FirstOrDefault(x => x.Id == id && x.Customer.ClientId == clientId);
+            return dbContext.Projects.Include(x=> x.Customer).FirstOrDefault(x => x.Id == id && x.Customer.ClientId == clientId);
         }
 
         public List<Project> LoadAllProject(int clientId)
@@ -57,7 +58,7 @@ namespace CentiSoftCore.DAL
 
         public List<Project> FindProjectOnClient(int clientId)
         {
-            return dbContext.Projects.Include(x => x.Cusomter).Where(x => x.Customer.ClientId == clientId);
+            return dbContext.Projects.Include(x => x.Customer).Where(x => x.Customer.ClientId == clientId).ToList();
         }
     }
 }
