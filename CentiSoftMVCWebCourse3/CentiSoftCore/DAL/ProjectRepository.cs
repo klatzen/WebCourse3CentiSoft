@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.DAL
 {
-    public class ProjectRepository : BaseRepository
+    public class ProjectRepository : BaseRepository, IProjectRepository
     {
         public Project LoadProject(int id, int clientId)
         {

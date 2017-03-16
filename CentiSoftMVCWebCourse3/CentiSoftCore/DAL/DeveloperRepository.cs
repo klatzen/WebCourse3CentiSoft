@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.DAL
 {
-    public class DeveloperRepository : BaseRepository
+    public class DeveloperRepository : BaseRepository, IDeveloperRepository
     {
         
         public Developer LoadDev(int id)

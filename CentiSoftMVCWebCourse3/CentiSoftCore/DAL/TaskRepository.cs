@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.DAL
 {
-    public class TaskRepository : BaseRepository
+    public class TaskRepository : BaseRepository, ITaskRepository
     {
         public List<MODELS.Task> LoadAllTask()
         {

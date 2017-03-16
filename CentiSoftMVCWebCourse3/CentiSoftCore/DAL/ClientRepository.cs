@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.DAL
 {
-    public class ClientRepository : BaseRepository
+    public class ClientRepository : BaseRepository, IClientRepository
     {
         public Client LoadClient(int id)
         {

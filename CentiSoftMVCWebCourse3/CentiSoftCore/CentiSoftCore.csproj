@@ -58,6 +58,11 @@
     <Compile Include="DAL\ClientRepository.cs" />
     <Compile Include="DAL\CustomerRepository.cs" />
     <Compile Include="DAL\DeveloperRepository.cs" />
+    <Compile Include="DAL\IClientRepository.cs" />
+    <Compile Include="DAL\ICustomerRepository.cs" />
+    <Compile Include="DAL\IDeveloperRepository.cs" />
+    <Compile Include="DAL\IProjectRepository.cs" />
+    <Compile Include="DAL\ITaskRepository.cs" />
     <Compile Include="DAL\ProjectRepository.cs" />
     <Compile Include="DAL\TaskRepository.cs" />
     <Compile Include="MODELS\Client.cs" />
