@@ -40,7 +40,7 @@ namespace CentiSoftCore.DAL
             dbContext.SaveChanges();
         }
 
-        public bool hasProjects(int id)
+        public bool HasProjects(int id)
         {
             bool hasProjects = false;
             List<Project> proj = dbContext.Projects.Where(x => x.CustomerId == id).ToList();
@@ -50,7 +50,7 @@ namespace CentiSoftCore.DAL
             return hasProjects;
         }
 
-        public List<Project> findProjOnCusID(int cusId, int clientId)
+        public List<Project> FindProjOnCusID(int cusId, int clientId)
         {
             List<Project> projList = dbContext.Projects.Where(x => x.CustomerId == cusId && x.Customer.ClientId == clientId).ToList();
             return projList;
