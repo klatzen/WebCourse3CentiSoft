@@ -10,15 +10,16 @@ namespace CentiSoftCore.BLL
 {
     public class CustomerFacade : BaseFacade, ICustomerFacade
     {
-        private CustomerRepository customerRepository;
-        private ProjectRepository projectRepository;
-        private TaskRepository taskRepository;
-        public CustomerFacade(int clientId) : base(clientId)
+        private ICustomerRepository customerRepository;
+        private IProjectRepository projectRepository;
+        private ITaskRepository taskRepository;
+        public CustomerFacade(int clientId, ICustomerRepository customerRepository,IProjectRepository projectRepository,ITaskRepository taskRepository) : base(clientId)
         {
 
-            customerRepository = new CustomerRepository();
-            projectRepository = new ProjectRepository();
-
+            this.customerRepository = customerRepository;
+            this.projectRepository = projectRepository;
+            this.taskRepository = taskRepository;
+            
         }
 
         public Customer LoadCustomer(int id)
