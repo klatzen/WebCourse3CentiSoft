@@ -10,14 +10,14 @@ namespace CentiSoftCore.BLL
 {
     public class ClientFacade : BaseFacade, IClientFacade
     {
-        private ClientRepository clientRepo;
-        private CustomerRepository customerRepo;
-        private ProjectRepository projectRepo;
-        public ClientFacade(int clientId) : base(clientId)
+        private IClientRepository clientRepo;
+        private ICustomerRepository customerRepo;
+        private IProjectRepository projectRepo;
+        public ClientFacade(IClientRepository clientRepo, ICustomerRepository customerRepo, IProjectRepository projectRepo, int clientId) : base(clientId)
         {
-            clientRepo = new ClientRepository();
-            customerRepo = new CustomerRepository();
-            projectRepo = new ProjectRepository();
+            this.clientRepo = clientRepo;
+            this.customerRepo = customerRepo;
+            this.projectRepo = projectRepo;
             
         }
         public Client LoadClient(int id)
