@@ -9,7 +9,7 @@ namespace CentiSoftCore.DAL
 {
     public class DeveloperRepository : BaseRepository, IDeveloperRepository
     {
-        
+
         public Developer LoadDev(int id)
         {
             return dbContext.Developers.FirstOrDefault(x => x.Id == id);
@@ -42,5 +42,5 @@ namespace CentiSoftCore.DAL
             dbContext.SaveChanges();
         }
     }
-    }
 }
+

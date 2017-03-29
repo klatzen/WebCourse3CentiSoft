@@ -9,7 +9,7 @@ namespace CentiSoftCore.DAL
         List<Customer> FindCustomersOnClient(int id);
         List<Customer> LoadAllCustomers(int clientId);
         Customer LoadCustomer(int id, int clientId);
-        void RemoveCustomer(int id);
+        void RemoveCustomer(int id, int clientId);
         void SaveCustomer(Customer customer);
     }
 }

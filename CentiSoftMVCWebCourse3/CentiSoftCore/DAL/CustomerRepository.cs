@@ -40,7 +40,7 @@ namespace CentiSoftCore.DAL
             return dbContext.Customers.FirstOrDefault(x => x.ClientId == id);
         }
 
-        public void RemoveCustomer(int id) {
+        public void RemoveCustomer(int id, int clientId) {
             Customer customer = LoadCustomer(id, clientId);
             dbContext.Customers.Remove(customer);
         }

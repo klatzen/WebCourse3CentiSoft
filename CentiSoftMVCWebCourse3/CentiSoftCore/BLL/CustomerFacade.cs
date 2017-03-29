@@ -1,5 +1,6 @@
 ﻿using CentiSoftCore.DAL;
 using CentiSoftCore.MODELS;
+using CentiSoftCore.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,14 +11,16 @@ namespace CentiSoftCore.BLL
 {
     public class CustomerFacade : BaseFacade, ICustomerFacade
     {
-        private CustomerRepository customerRepository;
-        private ProjectRepository projectRepository;
-        private TaskRepository taskRepository;
+        private ICustomerRepository customerRepository;
+        private IProjectRepository projectRepository;
+        private ITaskRepository taskRepository;
+
         public CustomerFacade(int clientId) : base(clientId)
         {
 
-            customerRepository = new CustomerRepository();
-            projectRepository = new ProjectRepository();
+            customerRepository = StructureMapContainer.GetContainer().GetInstance<ICustomerRepository>();
+            projectRepository = StructureMapContainer.GetContainer().GetInstance<IProjectRepository>();
+            taskRepository = StructureMapContainer.GetContainer().GetInstance<ITaskRepository>();
 
         }
 

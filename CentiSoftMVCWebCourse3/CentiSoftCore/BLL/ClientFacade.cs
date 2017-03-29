@@ -1,5 +1,6 @@
 ﻿using CentiSoftCore.DAL;
 using CentiSoftCore.MODELS;
+using CentiSoftCore.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,12 +14,12 @@ namespace CentiSoftCore.BLL
         private IClientRepository clientRepo;
         private ICustomerRepository customerRepo;
         private IProjectRepository projectRepo;
-        public ClientFacade(IClientRepository clientRepo, ICustomerRepository customerRepo, IProjectRepository projectRepo, int clientId) : base(clientId)
+        public ClientFacade(int clientId) : base(clientId)
         {
-            this.clientRepo = clientRepo;
-            this.customerRepo = customerRepo;
-            this.projectRepo = projectRepo;
-            
+            this.clientRepo = StructureMapContainer.GetContainer().GetInstance<IClientRepository>();
+            this.customerRepo = StructureMapContainer.GetContainer().GetInstance<ICustomerRepository>();
+            this.projectRepo = StructureMapContainer.GetContainer().GetInstance<IProjectRepository>();
+
         }
         public Client LoadClient(int id)
         {

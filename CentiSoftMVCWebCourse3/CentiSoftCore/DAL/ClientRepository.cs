@@ -23,7 +23,7 @@ namespace CentiSoftCore.DAL
             if (client.Id > 0)
             {
                 Client oldClient = LoadClient(client.Id);
-                oldClient.Name = oldClient.Name;
+                oldClient.Name = client.Name;
             }
             else
             {

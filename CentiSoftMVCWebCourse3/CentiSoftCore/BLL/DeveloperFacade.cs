@@ -1,5 +1,6 @@
 ﻿using CentiSoftCore.DAL;
 using CentiSoftCore.MODELS;
+using CentiSoftCore.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,12 +14,11 @@ namespace CentiSoftCore.BLL
         private IDeveloperRepository devRep;
         private ITaskRepository taskRep;
 
-        public DeveloperFacade(IDeveloperRepository devRep, ITaskRepository taskRep,int clientId) : base(clientId)
+        public DeveloperFacade(int clientId) : base(clientId)
         {
-            this.devRep = devRep;
-            this.taskRep = taskRep;
+            this.devRep = StructureMapContainer.GetContainer().GetInstance<IDeveloperRepository>();
+            this.taskRep = StructureMapContainer.GetContainer().GetInstance<ITaskRepository>();
         }
-
         public List<Developer> LoadAllDev()
         {
             return devRep.LoadAllDev();
