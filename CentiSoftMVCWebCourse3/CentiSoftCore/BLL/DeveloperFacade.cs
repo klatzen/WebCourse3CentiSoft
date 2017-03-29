@@ -10,13 +10,13 @@ namespace CentiSoftCore.BLL
 {
     public class DeveloperFacade : BaseFacade, IDeveloperFacade
     {
-        private DeveloperRepository devRep;
-        private TaskRepository taskRep;
+        private IDeveloperRepository devRep;
+        private ITaskRepository taskRep;
 
-        public DeveloperFacade(int clientId) : base(clientId)
+        public DeveloperFacade(IDeveloperRepository devRep, ITaskRepository taskRep,int clientId) : base(clientId)
         {
-            devRep = new DeveloperRepository();
-            taskRep = new TaskRepository();
+            this.devRep = devRep;
+            this.taskRep = taskRep;
         }
 
         public List<Developer> LoadAllDev()
