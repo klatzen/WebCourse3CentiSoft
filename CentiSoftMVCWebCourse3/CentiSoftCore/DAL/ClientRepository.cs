@@ -37,5 +37,10 @@ namespace CentiSoftCore.DAL
             dbContext.Clients.Remove(tempClient);
             dbContext.SaveChanges();
         }
+
+        public Client LoadClient(string token)
+        {
+            return dbContext.Clients.FirstOrDefault(x => x.Token == token);
+        }
     }
 }

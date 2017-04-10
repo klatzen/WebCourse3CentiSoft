@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.BLL
 {
-    public class ClientFacade : BaseFacade, IClientFacade
+    public class ClientFacade : IClientFacade
     {
         private IClientRepository clientRepo;
         private ICustomerRepository customerRepo;
         private IProjectRepository projectRepo;
-        public ClientFacade(int clientId) : base(clientId)
+        public ClientFacade()
         {
             this.clientRepo = StructureMapContainer.GetContainer().GetInstance<IClientRepository>();
             this.customerRepo = StructureMapContainer.GetContainer().GetInstance<ICustomerRepository>();
@@ -24,6 +24,11 @@ namespace CentiSoftCore.BLL
         public Client LoadClient(int id)
         {
             return clientRepo.LoadClient(id);
+        }
+
+        public Client LoadClient(string token)
+        {
+            return clientRepo.LoadClient(token);
         }
         public List<Client> LoadAllClient()
         {

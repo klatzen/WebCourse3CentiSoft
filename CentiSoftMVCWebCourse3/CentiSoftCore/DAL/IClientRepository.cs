@@ -8,6 +8,7 @@ namespace CentiSoftCore.DAL
         void DeleteClient(int id);
         List<Client> LoadAllClient();
         Client LoadClient(int id);
+        Client LoadClient(string token);
         void SaveClient(Client client);
     }
 }

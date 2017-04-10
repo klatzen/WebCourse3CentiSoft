@@ -9,6 +9,7 @@ namespace CentiSoftCore.BLL
         List<Project> FindAllProjectsOnClient();
         List<Client> LoadAllClient();
         Client LoadClient(int id);
+        Client LoadClient(string token);
         void SaveClient(Client client);
     }
 }
