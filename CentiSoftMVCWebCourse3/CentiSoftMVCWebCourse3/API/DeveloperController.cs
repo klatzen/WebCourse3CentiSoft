@@ -1,5 +1,6 @@
 ﻿using CentiSoftCore.BLL;
 using CentiSoftCore.MODELS;
+using CentiSoftMVCWebCourse3.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace CentiSoftMVCWebCourse3.API
     public class DeveloperController : ApiController
     {
         //Lille ændring
+        [Log]
         [HttpGet]
         public List<Developer> GetAllDevelopers()
         {
@@ -18,6 +20,7 @@ namespace CentiSoftMVCWebCourse3.API
             return devFacade.LoadAllDev();
         }
 
+        [Log]
         [HttpGet]
         public Developer GetDeveloper(int id)
         {
@@ -25,6 +28,7 @@ namespace CentiSoftMVCWebCourse3.API
             return devFacade.LoadDev(id);
         }
 
+        [Log]
         [HttpPost, HttpPut]
         public void PostDeveloper([FromBody] Developer developer)
         {
@@ -32,6 +36,7 @@ namespace CentiSoftMVCWebCourse3.API
             devFacade.SaveDev(developer);
         }
 
+        [Log]
         [HttpDelete]
         public void DeleteDeveloper(int id)
         {
