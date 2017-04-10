@@ -10,6 +10,7 @@ namespace CentiSoftMVCWebCourse3.API
 {
     public class DeveloperController : ApiController
     {
+        //Lille ændring
         [HttpGet]
         public List<Developer> GetAllDevelopers()
         {
