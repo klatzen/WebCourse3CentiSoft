@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace CentiSoftCore.BLL
 {
-    public class DeveloperFacade : BaseFacade, IDeveloperFacade
+    public class DeveloperFacade : IDeveloperFacade
     {
         private IDeveloperRepository devRep;
         private ITaskRepository taskRep;
 
-        public DeveloperFacade(int clientId) : base(clientId)
+        public DeveloperFacade()
         {
             this.devRep = StructureMapContainer.GetContainer().GetInstance<IDeveloperRepository>();
             this.taskRep = StructureMapContainer.GetContainer().GetInstance<ITaskRepository>();
