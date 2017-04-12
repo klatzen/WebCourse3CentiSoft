@@ -38,6 +38,7 @@ namespace CentiSoftMVCWebCourse3.Controllers
                     responseMessage.StatusCode = HttpStatusCode.OK;
                     responseMessage.ReasonPhrase = "Token Valid";
                     responseMessage.Content = new StringContent(client.Id.ToString());
+                    actionContext.Request.Properties.Add(new KeyValuePair<string, object>("id", client.Id));
                 }
             }
             else

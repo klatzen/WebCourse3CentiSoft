@@ -23,7 +23,7 @@ namespace CentiSoftCore.BLL
             taskRepository = StructureMapContainer.GetContainer().GetInstance<ITaskRepository>();
 
         }
-
+        
         public Customer LoadCustomer(int id)
         {
             return customerRepository.LoadCustomer(id, clientId);

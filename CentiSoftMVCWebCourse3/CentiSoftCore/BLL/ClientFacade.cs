@@ -54,7 +54,8 @@ namespace CentiSoftCore.BLL
         }
 
         public List<Project> FindAllProjectsOnClient() {
-            return projectRepo.LoadAllProject(clientId);
+            return null;
+                //projectRepo.LoadAllProject(clientId);
         }
     }
 }
